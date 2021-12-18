@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+h2 {
+  margin-bottom: 0px;
+  text-align: center;
+}
+.pagination ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  flex-direction: row;
+  margin: 0.25rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.pagination ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem;
+  border-radius: 0.5rem;
+  background: rgb(241, 88, 27);
+  border: 1px solid #303030;
+}
+
+.pagination ul li a:hover {
+  border-color: #ff92f1;
+  color: #ffb7f1;
+}
+
+.pagination ul li a.active {
+  background-color: #ff52f1;
+}
+
+/*------------User Data table----------*/
+table {
+  margin: 30px;
+  width: 90%;
+}
+table,
+th,
+td {
+  border: 1px solid red;
+  border-collapse: collapse;
+}
+
+#userTable th {
+  width: 25%;
+  border: 1px solid red;
+  background: rgb(245, 102, 45);
+  padding: 0.8%;
+  font-size: 1.25rem;
+}
+
+#userTable td {
+  font-size: 0.85rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 0.5%;
+}
+
+@media screen and (max-width: 767px) {
+  .pagination ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+  }
+  .pagination ul li a {
+    padding: 0.5rem 0.75rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+  }
+  table {
+    margin: 15px;
+  }
+  #userTable th {
+    width: 20%;
+    padding: 0.8%;
+    font-size: 0.9rem;
+  }
+  #userTable td {
+    font-size: 0.7rem;
+  }
+}
